@@ -1,0 +1,54 @@
+.keyboard
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+.typewriter-background
+    background: #f7f7f7;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+.key-row
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+.key
+    width: 60px;
+    height: 60px;
+    background-color: #4e4e4e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: 'Courier New', monospace;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s, box-shadow 0.1s, background-color 0.1s;
+
+.key-leg
+    position: absolute;
+    bottom: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+
+.key.pressed
+    transform: translateY(4px);
+    background-color: #333;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+
+.key-en
+    font-weight: bold;
+    font-size: 18px;
+
+.key-ru
+    font-size: 12px;
+    opacity: 0.6;
