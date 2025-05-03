@@ -96,8 +96,8 @@ export default function Keyboard({ getKeys }) {
   }, [pressedKeys, getKeys, language]); // Обновляем getKeys при изменении pressedKeys
 
   return (
-    <div className="keyboard">
-      <div className="typewriter-background">
+    <div className="keyboard-shell">
+      <div className="keyboard">
         {keys.map((row, rowIndex) => (
           <div className="key-row" key={rowIndex}>
             {row.map((key, keyIndex) => (
@@ -114,11 +114,11 @@ export default function Keyboard({ getKeys }) {
               >
                 <span className="key-en">{key.en}</span>
                 <span className="key-ru">{key.ru}</span>
-                <div className="key-leg"></div> {/* Ножка для каждой клавиши */}
               </div>
             ))}
           </div>
         ))}
+        <div className="keyboard-top-padding" />
       </div>
     </div>
   );
